@@ -1,0 +1,49 @@
+/* Ensure the page can scroll properly */
+/* Ensure default scrolling behavior */
+html, body {
+  overflow: visible;
+  height: auto;
+}
+
+/* Make admin container adapt dynamically to its content */
+.admin-container {
+  text-align: center;
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  box-sizing: border-box; /* Includes padding/borders in the dimensions */
+}
+
+/* Optional: Force a minimum height for the container to avoid awkward page gaps */
+.admin-container {
+  min-height: 100vh; /* The container will span at least the full viewport height */
+}
+
+/* Table Scroll Support if Needed */
+.table-scrollable {
+  overflow-x: auto; /* Allows horizontal scrolling for wide tables */
+}
+
+/* General Reset for Form and Table Elements */
+input, textarea, button {
+  box-sizing: border-box;
+}
+
+table {
+  width: 100%;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+button {
+  display: inline-block; /* Prevents the button from unexpectedly filling available width */
+}
